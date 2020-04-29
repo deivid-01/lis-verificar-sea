@@ -1,7 +1,7 @@
 const axios = require('axios')
 const controller = {}
 var  obstacle = {} ;
-
+var aux = {};
 controller.Validate =(req, res) => {
     
     axios.post(`http://172.21.0.131:5000/api/test/consultainformacionacademicamares`, {
