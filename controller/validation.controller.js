@@ -7,9 +7,10 @@ controller.Validate =(req, res) => {
     axios.post(`http://172.21.0.131:5000/api/test/consultainformacionacademicamares`, {
         "cedula": req.body.cedula       
     }).then(semesters => {
-        
+        console.log(semesters);
         var category=req.body.categoria;     
         var programa= semesteres.data[0].programa;
+        console.log(programa);
         var semestre = semesteres.data[0].semestre;
         var tipoHomolog ="TODAS";
         
